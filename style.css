@@ -1,0 +1,90 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Fundo da página */
+body {
+    background-color: #e0e0e0; /* Cor cinza neumórfica padrão */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Painel principal que envolve o teclado */
+.keyboard-container {
+    background-color: #e0e0e0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 15px #bebebe, -7px -7px 15px #ffffff;
+    width: 650px;
+    max-width: 95%;
+}
+
+/* Caixa de texto (Efeito neumórfico para dentro/afundado) */
+#display {
+    width: 100%;
+    height: 120px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 1.3rem;
+    color: #555;
+    outline: none;
+    resize: none;
+    margin-bottom: 25px;
+    /* Sombras internas dão o efeito de profundidade */
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+/* Linhas de botões */
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+/* Teclas padrão (Efeito neumórfico para fora/relevo) */
+.key {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 8px;
+    min-width: 45px;
+    height: 45px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #707070;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+    transition: all 0.1s ease;
+    user-select: none;
+}
+
+/* Efeito visual de clique mecânico (afunda ao clicar com o mouse) */
+.key:active {
+    box-shadow: inset 3px 3px 6px #bebebe, inset -3px -3px 6px #ffffff;
+    transform: scale(0.98);
+}
+
+/* Tecla de espaço estendida */
+.space-key {
+    width: 60%;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/* Tecla de apagar */
+.action-key {
+    min-width: 50px;
+    background-color: #e5e5e5;
+}
