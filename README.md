@@ -1,6 +1,6 @@
 # Neumorphism Keyboard
 
-Projeto de prática de front-end que consiste em um **teclado virtual interativo** com estilo visual **Neumorphism** (soft UI), desenvolvido com HTML, CSS e JavaScript.
+Projeto de prática de front-end que consiste em um **teclado virtual interativo** com estilo visual **Neumorphism** (soft UI), desenvolvido com HTML, CSS.
 
 ## 📋 Sobre o projeto
 
